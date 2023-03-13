@@ -4,17 +4,18 @@
 // a) Essa string pode ser informada através de qualquer entrada de sua preferência ou pode ser previamente definida no código;
 // b) Evite usar funções prontas, como, por exemplo, reverse;
 
-const data = '1234567891011121314151617181920';
+const minhaString = '123456789';
 
-function inversor_de_strings(data) {
-  let newData = data.split('');
+function inversor_de_strings(minhaString) {
+  let minhaStringEmArray = Array.from(minhaString);
+  let stringSize = minhaStringEmArray.length;
 
-  for (let i = 0; i < newData.length / 2; i++) {
-    let aux = newData[i];
-    newData[i] = newData[newData.length - 1 - i];
-    newData[newData.length - 1 - i] = aux;
+  for (let i = 0; i < stringSize / 2; i++) {
+    let aux = minhaStringEmArray[i];
+    minhaStringEmArray[i] = minhaStringEmArray[stringSize - 1 - i];
+    minhaStringEmArray[stringSize - 1 - i] = aux;
   }
-  return newData.join('');
+  return minhaStringEmArray.join('');
 }
 
-console.log(inversor_de_strings(data));
+console.log(inversor_de_strings(minhaString));

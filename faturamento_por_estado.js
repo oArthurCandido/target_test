@@ -28,7 +28,7 @@ function faturamento_por_estado(data) {
       percentual: ((Object.values(item)[0] / total) * 100).toFixed(2)
     });
   });
-  console.log(estados[0]);
+  console.log(estados);
   return estados;
 }
 
