@@ -4,4 +4,4 @@
 
 Escolhi usar um framework para acelerar o processo de desenvolvimento.
 
-Acesse o app em:
+Acesse o app em: https://desafio-tecnico-target.vercel.app/
